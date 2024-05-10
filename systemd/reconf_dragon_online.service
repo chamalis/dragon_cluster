@@ -1,0 +1,6 @@
+[Unit]
+Description=Reconfigure Cluster with the new ID
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/reconf_dragon_online.py

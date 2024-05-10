@@ -1,0 +1,8 @@
+[Unit]
+Description=Trigger reconf_dragon_online.service when dragonfly.service restarts
+
+[Path]
+PathChanged=/var/run/dragonfly/dragonfly.pid
+
+[Install]
+WantedBy=multi-user.target
